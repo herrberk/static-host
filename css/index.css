@@ -6246,7 +6246,7 @@ span.icon.user.blog-author:after {
   }
   @media only screen and (max-width:491px) {
     .item .entry-content, .static_page .entry-content {
-      font-size: 18px;
+      font-size: 19px;
       line-height: 1.58;
       letter-spacing: -.004em;
     }
