@@ -1748,7 +1748,7 @@ a {
 
 .logoicon {
   overflow: hidden;
-  position: fixed;
+  position: absolute;
   z-index: 100;
   left: 0px;
   bottom: auto;

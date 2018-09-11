@@ -35,10 +35,11 @@ $(document).ready(function () {
 
 //Ad Popup
 jQuery(document).ready(function ($) {
+    var duration = Math.floor(Math.random() * 20000) + 1000; 
     setTimeout(function () {
         $(".bts-popup").addClass("is-visible");
         $(".bts-popup").css("display", "block");
-    }, 2000);
+    }, duration);
 
     //open popup
     $(".bts-popup-trigger").on("click", function (event) {
@@ -290,9 +291,17 @@ $(document).ready(function () {
 });
 
 $(document).ready(function () { // Created by Berk SOYSAL 
+    // Data saver mode for mobile devices.
     $('.entry-content .post-media .image-wrap img').each(function () {
-        this.src = this.src.replace('/s72-c/', '/s400/');
+        if ($(window).width() > 450) {
+            this.src = this.src.replace('/s72-c/', '/s400/');
+
+        } else {
+            this.src = this.src.replace('/s72-c/', '/s200/');
+            this.src = this.src.replace('/s1600/', '/s400/');
+        }
     });
+
     $("img").each(function () {
         $(this).attr("data-src", $(this).attr("src"));
         $(this).removeAttr("data-src");
