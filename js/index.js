@@ -293,13 +293,7 @@ $(document).ready(function () {
 $(document).ready(function () { // Created by Berk SOYSAL 
     // Data saver mode for mobile devices.
     $('.entry-content .post-media .image-wrap img').each(function () {
-        if ($(window).width() > 450) {
-            this.src = this.src.replace('/s72-c/', '/s400/');
-
-        } else {
-            this.src = this.src.replace('/s72-c/', '/s200/');
-            this.src = this.src.replace('/s1600/', '/s400/');
-        }
+        this.src = this.src.replace('/s72-c/', '/s400/');
     });
 
     $("img").each(function () {

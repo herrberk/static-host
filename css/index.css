@@ -2807,10 +2807,6 @@ BUTTON LOGGED AS - LOGOUT
   width: 100%;
 }
 
-.blog-content .post .post-media img:hover {
-  transform: scale(1.05) rotate(0.2deg);
-}
-
 .blog-content .post .post-meta .post-format {
   width: 60px;
   height: 60px;
@@ -3006,7 +3002,6 @@ BUTTON LOGGED AS - LOGOUT
 }
 
 .blog-content .post .post-body .post-title h2 {
-  background-color: white;
   font-family: 'Questrial', sans-serif;
   text-align: center;
   font-weight: 600;
@@ -3024,12 +3019,12 @@ BUTTON LOGGED AS - LOGOUT
 .blog-content .post .post-body .post-title h2 a {
   display: block;
   color: inherit;
-  margin-top: 10px;
-  margin-bottom: 15px;
+  margin-top: 15px;
+  margin-bottom: 20px;
 }
 
 .blog-content .post .post-body .post-title h2 a:hover {
-  color: #e15d5d;
+  color: #8e8e8e;
 }
 
 .blog-content .post .post-body .post-entry {
@@ -3348,9 +3343,11 @@ body.single-post .blog-content .post .post-body .post-share .share-toggle {
 
 .blog-grid .post .post-body {
   padding: 0px 0px 0 0px;
-  margin-bottom: 8px;
+  margin-bottom: 0px;
   margin-top: 0px;
-  background-color: #FFFFFF;
+  background-color: #f3f3f3;
+  border-bottom-left-radius: 4px;
+  border-bottom-right-radius: 4px;
 }
 
 .blog-grid .post .post-body .post-share {
