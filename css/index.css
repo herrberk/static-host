@@ -782,16 +782,22 @@ pre:before {
   font-weight: 700;
 }
 
-.hljs-comment, .hljs-quote {
+.hljs-comment,
+.hljs-quote {
   color: #bc9458;
   font-style: italic;
 }
 
-.hljs-keyword, .hljs-selector-tag {
+.hljs-keyword,
+.hljs-selector-tag {
   color: #c26230;
 }
 
-.hljs-string, .hljs-number, .hljs-regexp, .hljs-variable, .hljs-template-variable {
+.hljs-string,
+.hljs-number,
+.hljs-regexp,
+.hljs-variable,
+.hljs-template-variable {
   color: #a5c261;
 }
 
@@ -799,7 +805,8 @@ pre:before {
   color: #519f50;
 }
 
-.hljs-tag, .hljs-name {
+.hljs-tag,
+.hljs-name {
   color: #e8bf6a;
 }
 
@@ -807,7 +814,13 @@ pre:before {
   color: #da4939;
 }
 
-.hljs-symbol, .hljs-bullet, .hljs-built_in, .hljs-builtin-name, .hljs-attr, .hljs-link {
+
+.hljs-symbol,
+.hljs-bullet,
+.hljs-built_in,
+.hljs-builtin-name,
+.hljs-attr,
+.hljs-link {
   color: #6d9cbe;
 }
 
@@ -823,7 +836,8 @@ pre:before {
   color: #9b859d;
 }
 
-.hljs-title, .hljs-section {
+.hljs-title,
+.hljs-section {
   color: #ffc66d;
 }
 
