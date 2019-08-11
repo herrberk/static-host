@@ -914,7 +914,7 @@ pre:before {
 }
 
 .header {
-  height: 420px;
+  height: 220px;
   background: none;
   overflow: hidden;
   background-image: url('https://3.bp.blogspot.com/-fm75CWIZ8Mg/WVLZeN6gNeI/AAAAAAAALZA/FtqzlKSacJshKnQxQ029e6Oq6hqfSJ2OwCLcBGAs/s1600/laptop-2434393_1920.jpg')
@@ -1024,16 +1024,6 @@ div#topnav h2 {
   display: block;
   text-align: left;
   margin-left: 30px;
-  font-style: italic;
-}
-
-.postbreaker {
-  top: 0.1vw;
-  position: relative;
-  font-size: calc(19px + 0.3vw);
-  font-weight: 400;
-  color: grey;
-  background: none;
 }
 
 .navicon:hover {
