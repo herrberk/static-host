@@ -1,0 +1,155 @@
+code[class*="language-"],
+pre[class*="language-"] {
+	color: #f8f8f2;
+	background: none;
+	text-shadow: 0 1px rgba(0, 0, 0, 0.3);
+	font-family: 'Source Code Pro', monospace;
+	text-align: left;
+	white-space: pre;
+	word-spacing: normal;
+	word-break: normal;
+	word-wrap: normal;
+
+	-moz-tab-size: 4;
+	-o-tab-size: 4;
+	tab-size: 4;
+
+	-webkit-hyphens: none;
+	-moz-hyphens: none;
+	-ms-hyphens: none;
+	hyphens: none;
+}
+
+/* Code blocks */
+pre[class*="language-"] {
+	padding: 1em;
+	margin: .5em 0;
+	overflow: auto;
+	border-radius: 0.3em;
+}
+
+pre[class*="language-"]::-webkit-scrollbar {
+    width: 3px;
+}
+
+pre[class*="language-"]::-webkit-scrollbar-button {
+    width: 5px;
+    height: 3px;
+}
+
+pre[class*="language-"]::-webkit-scrollbar-track {
+    background: transparent;
+    border-radius: 2px;
+}
+
+pre[class*="language-"]::-webkit-scrollbar-thumb {
+    background: rgba(216, 220, 226, 0.27);
+    border: thin solid rgba(216, 220, 226, 0.3);
+    border-radius: 5px;
+}
+
+pre:before {
+    z-index: 10;
+    content: "";
+    background-color: #232323;
+    background-image: url('https://3.bp.blogspot.com/-o4ProcZ4gh4/WOmt3fiZmRI/AAAAAAAALU0/Pk49YdCNZ3YNWGTYqsSILaYQkH5BwV9RwCLcB/s1600/code.png');
+    background-size: 34px;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: absolute;
+    margin-left: -30px;
+    margin-top: -30px;
+    color: white;
+    line-height: 0;
+    width: 38px;
+    height: 38px;
+    border-radius: 100%;
+    font-size: 30px;
+    font-weight: 700;
+}
+
+:not(pre) > code[class*="language-"],
+pre[class*="language-"] {
+	background: #272822;
+}
+
+/* Inline code */
+:not(pre) > code[class*="language-"] {
+	padding: .1em;
+	border-radius: .3em;
+	white-space: normal;
+}
+
+.token.comment,
+.token.prolog,
+.token.doctype,
+.token.cdata {
+	color: slategray;
+}
+
+.token.punctuation {
+	color: #f8f8f2;
+}
+
+.namespace {
+	opacity: .7;
+}
+
+.token.property,
+.token.tag,
+.token.constant,
+.token.symbol,
+.token.deleted {
+	color: #f92672;
+}
+
+.token.boolean,
+.token.number {
+	color: #ae81ff;
+}
+
+.token.selector,
+.token.attr-name,
+.token.string,
+.token.char,
+.token.builtin,
+.token.inserted {
+	color: #a6e22e;
+}
+
+.token.operator,
+.token.entity,
+.token.url,
+.language-css .token.string,
+.style .token.string,
+.token.variable {
+	color: #f8f8f2;
+}
+
+.token.atrule,
+.token.attr-value,
+.token.function,
+.token.class-name {
+	color: #e6db74;
+}
+
+.token.keyword {
+	color: #66d9ef;
+}
+
+.token.regex,
+.token.important {
+	color: #fd971f;
+}
+
+.token.important,
+.token.bold {
+	font-weight: bold;
+}
+.token.italic {
+	font-style: italic;
+}
+
+.token.entity {
+	cursor: help;
+}
