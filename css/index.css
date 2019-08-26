@@ -695,7 +695,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, nav, 
   height: 220px;
   background: none;
   overflow: hidden;
-  background-image: url('https://3.bp.blogspot.com/-fm75CWIZ8Mg/WVLZeN6gNeI/AAAAAAAALZA/FtqzlKSacJshKnQxQ029e6Oq6hqfSJ2OwCLcBGAs/s1600/laptop-2434393_1920.jpg')
+  background-image: url('https://1.bp.blogspot.com/-mQz8oYEWudY/XWRPSmFthAI/AAAAAAAAZtU/LgkgSeA34coUZZ628knh9cdkWG-dWX_ZACLcBGAs/s1600/bg-min.jpg')
 }
 
 .header.header-responsive .logo {
@@ -1633,7 +1633,7 @@ a {
 }
 
 .title-label a {
-  font-size: 10px;
+  font-size: 12px;
   font-family: 'Questrial';
   text-transform: capitalize;
   color: #a5a5a5;
@@ -1642,9 +1642,9 @@ a {
   text-decoration: none;
   padding: 3px;
   padding-left: 5px;
-  padding-right: 5px;
+  padding-right: 4px;
   border-radius: 3px;
-  margin-right: 2px;
+  margin-right: 5px;
 }
 
 .title-label a:hover {
@@ -1909,7 +1909,7 @@ li:last-child {
 #awesomemenu a {
   position: relative;
   z-index: 10;
-  padding: 13px 20px 13px 20px;
+  padding: 10px 20px 10px 20px;
   text-decoration: none;
   color: rgba(75, 75, 75, 1);
   background: transparent;
