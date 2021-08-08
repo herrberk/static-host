@@ -4960,7 +4960,8 @@ span.icon.user.blog-author:after {
       width: 50%;
     }
     .col-md-berk {
-      width: 50%;
+      width: 46%;
+      margin-left: 3%;
     }
     .header.header-responsive .pi-navigation {
       position: relative;
@@ -5137,8 +5138,8 @@ span.icon.user.blog-author:after {
       width: 100%;
     }
     .col-md-berk {
-      width: 45%;
-      margin-left: 2%
+      width: 42%;
+      margin-left: 5%
     }
     .header .container {
       overflow: hidden;
