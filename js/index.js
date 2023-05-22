@@ -33,8 +33,27 @@ $(document).ready(function () {
     }
 });
 
-//Ad Popup
+// Ad Popup
 jQuery(document).ready(function ($) {
+    // Adblock detector
+    // Function called if AdBlock is not detected
+    function adBlockNotDetected() {
+        // Do nothing if adBlock is not detected for now.
+    }
+    // Function called if AdBlock is detected
+    function adBlockDetected() {
+        var adContainer = $("#bts-popup .bts-popup-container");
+        adContainer.empty();
+        adContainer.css("padding", "0px");
+        $('<img src="https://4.bp.blogspot.com/-W915E4_8-c8/WtIQvJY9xtI/AAAAAAAAP04/pLgWIXD5xNI1C-eORMR-8i9ViV-E-fMHgCLcBGAs/s1600/Notice.png"></img>').appendTo(adContainer);
+    }
+
+    let adblockTest = new Request(
+        "https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js",
+        { method: "HEAD", mode: "no-cors" }
+    );
+    fetch(adblockTest).then(res => adBlockNotDetected()).catch(err => adBlockDetected());
+
     var duration = Math.floor(Math.random() * 20000) + 1000; 
     setTimeout(function () {
         $(".bts-popup").addClass("is-visible");
@@ -74,14 +93,6 @@ jQuery(document).ready(function ($) {
     });
 });
 
-// Adblock detector
-if( window.isAdsDisplayed === undefined ) {
-  // AdBlock is enabled.
-    var adContainer = $("#bts-popup .bts-popup-container");
-    adContainer.empty();
-    adContainer.css("padding", "0px");
-    $('<img src="https://4.bp.blogspot.com/-W915E4_8-c8/WtIQvJY9xtI/AAAAAAAAP04/pLgWIXD5xNI1C-eORMR-8i9ViV-E-fMHgCLcBGAs/s1600/Notice.png"></img>').appendTo(adContainer);
-}
 
 /*!
 * Masonry PACKAGED v3.1.5

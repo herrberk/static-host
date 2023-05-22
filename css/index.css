@@ -5354,11 +5354,11 @@ span.icon.user.blog-author:after {
   font-weight: bold;
   text-decoration: none;
   color: #fff;
-  background-color:#000;
-  background-size: 200px 200px;
-  padding:7px;
+  background-color:#d7d7d7;
+  line-height: 1;
+  padding:6px;
   padding-top:0px;
-  padding-bottom:0px;
+  padding-bottom:2px;
   border-radius:5px;
   -webkit-user-select: none; /* Safari */
   -ms-user-select: none; /* IE 10 and IE 11 */
@@ -5366,7 +5366,8 @@ span.icon.user.blog-author:after {
 }
 
 .bts-popup-container .bts-popup-close:hover {
-  color: orange;
+  color: white;
+  background-color:red;
 }
 
 .bts-popup.is-visible {
@@ -5381,7 +5382,7 @@ span.icon.user.blog-author:after {
   position: relative;
   width: 100%;
   max-width: 400px;
-  height: 334px;
+  height: 350px;
   padding: 25px;
   margin: 4em auto;
   background: #ffffff;
