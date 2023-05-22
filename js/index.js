@@ -66,43 +66,21 @@ jQuery(document).ready(function ($) {
             $(this).css("display", "none");
         }
     });
+
+    // Close button for the popup
+    $(".bts-popup-close").on("click", function (event) {
+        $(".bts-popup").removeClass("is-visible");
+        $(".bts-popup").css("display", "none");
+    });
 });
 
-//Adblock detector
-// Function called if AdBlock is not detected
-function adBlockNotDetected() {
-    // Do nothing if adBlock is not detected for now.
-}
-// Function called if AdBlock is detected
-function adBlockDetected() {
+// Adblock detector
+if( window.isAdsDisplayed === undefined ) {
+  // AdBlock is enabled.
     var adContainer = $("#bts-popup .bts-popup-container");
     adContainer.empty();
     adContainer.css("padding", "0px");
     $('<img src="https://4.bp.blogspot.com/-W915E4_8-c8/WtIQvJY9xtI/AAAAAAAAP04/pLgWIXD5xNI1C-eORMR-8i9ViV-E-fMHgCLcBGAs/s1600/Notice.png"></img>').appendTo(adContainer);
-}
-
-// We look at whether FuckAdBlock already exists.
-if (typeof fuckAdBlock !== 'undefined' || typeof FuckAdBlock !== 'undefined') {
-    // If this is the case, it means that something tries to usurp are identity
-    // So, considering that it is a detection
-    adBlockDetected();
-} else {
-    // Otherwise, you import the script FuckAdBlock
-    var importFAB = document.createElement('script');
-    importFAB.onload = function () {
-        // If all goes well, we configure FuckAdBlock
-        fuckAdBlock.onDetected(adBlockDetected)
-        fuckAdBlock.onNotDetected(adBlockNotDetected);
-    };
-    importFAB.onerror = function () {
-        // If the script does not load (blocked, integrity error, ...)
-        // Then a detection is triggered
-        adBlockDetected();
-    };
-    importFAB.integrity = 'sha256-xjwKUY/NgkPjZZBOtOxRYtK20GaqTwUCf7WYCJ1z69w=';
-    importFAB.crossOrigin = 'anonymous';
-    importFAB.src = 'https://cdnjs.cloudflare.com/ajax/libs/fuckadblock/3.2.1/fuckadblock.min.js';
-    document.head.appendChild(importFAB);
 }
 
 /*!
